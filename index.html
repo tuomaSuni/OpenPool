@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Biljardihuone</title>
+    <title>OpenPool</title>
     <link rel="shortcut icon" href="TemplateData/favicon.png">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
+    <div class="banner">
+      <img src="TemplateData/logo.png" alt="Logo" class="logo">
+    </div>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=540 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -20,7 +23,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Biljardihuone</div>
+        <div id="unity-build-title">OpenPool</div>
       </div>
     </div>
     <script>
@@ -57,15 +60,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/biljardihuone.loader.js";
+      var loaderUrl = buildUrl + "/OpenPool.loader.js";
       var config = {
-        dataUrl: buildUrl + "/biljardihuone.data",
-        frameworkUrl: buildUrl + "/biljardihuone.framework.js",
-        codeUrl: buildUrl + "/biljardihuone.wasm",
+        dataUrl: buildUrl + "/OpenPool.data",
+        frameworkUrl: buildUrl + "/OpenPool.framework.js",
+        codeUrl: buildUrl + "/OpenPool.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Technocracy™",
-        productName: "Biljardihuone",
-        productVersion: "1.0",
+        productName: "OpenPool",
+        productVersion: "1.0 Alpha",
         showBanner: unityShowBanner,
       };
 
